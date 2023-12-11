@@ -22,17 +22,17 @@ const Calculator = () => {
   };
 
   return (
-    <div className="p-5 bg-white rounded shadow-lg w-64">
+    <div className="p-5 bg-pink-200 rounded shadow-lg w-64">
       <div className="flex justify-between items-center mb-5">
         <input
           type="text"
           readOnly
           value={input}
-          className="border-2 border-gray-300 rounded w-full p-2"
+          className="border-2 border-pink-500 rounded w-full p-2"
         />
         <button
           onClick={clearInput}
-          className="ml-2 bg-red-500 text-white rounded p-2"
+          className="ml-2 bg-pink-500 text-white rounded p-2"
         >
           C
         </button>
@@ -43,7 +43,7 @@ const Calculator = () => {
             <button
               key={value}
               onClick={() => handleClick(value)}
-              className="bg-blue-500 text-white rounded p-2"
+              className="bg-pink-500 text-white rounded p-2"
             >
               {value}
             </button>
@@ -51,7 +51,7 @@ const Calculator = () => {
         )}
         <button
           onClick={calculate}
-          className="col-span-4 bg-green-500 text-white rounded p-2"
+          className="col-span-4 bg-pink-700 text-white rounded p-2"
         >
           =
         </button>
